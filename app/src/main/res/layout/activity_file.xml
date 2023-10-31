@@ -9,10 +9,10 @@
 
 
     <EditText
+        android:id="@+id/enterValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/enter_value"
-        android:hint="To File"/>
+        android:hint="First and Last Name Separated by Space \n (ex: Juan Martinez)" />
 
 
 

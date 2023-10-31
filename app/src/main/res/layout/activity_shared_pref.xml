@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_user_info.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
+    android:id="@+id/linear_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".database.DatabaseActivity">
+    tools:context=".database.SharedPrefActivity">
 
     <EditText
         android:id="@+id/firstNameEditText"
@@ -20,7 +20,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="20dp" />
 
     <EditText
         android:id="@+id/lastNameEditText"
@@ -33,56 +33,30 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="20dp" />
 
     <Button
-        android:id="@+id/read_data"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="Read data" />
+        android:text="Save" />
 
     <Button
-        android:id="@+id/write_data"
+        android:id="@+id/readButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="Write data" />
-
-    <EditText
-        android:id="@+id/newFirst"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_edittext"
-        android:hint="New First Name"
-        android:padding="10dp"
-        android:textSize="20sp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <EditText
-        android:id="@+id/newLast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_edittext"
-        android:hint="New Last Name"
-        android:padding="10dp"
-        android:textSize="20sp" />
+        android:text="Read" />
 
     <Button
         android:id="@+id/updateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="UPDATE DATA" />
+        android:text="Update" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:text="Back" />
 
 </LinearLayout>
